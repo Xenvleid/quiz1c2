@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- A small startup is working on a semantics recognition project, 
+        and hired you to make a small word analysis app. They asked you to 
+        create a form with two <textarea>s and a button. Users will insert 
+            a list of words (one on each line) on the first textarea, and 
+            your job is to display the following result in the second textarea 
+            when the button is clicked.
+
+        ---
+        Nov 08, 2020 10:28 PM
+        43 words and 345 characters analyzed
+        9 words in capital case
+        4 words in lower case
+        23 words start with a vowel
+        34 words are less than 5 characters long
+        The longest word is “therefore” -->
+
+    <div>
+        <textarea id="ta1" cols="45" rows="10"></textarea></br>
+        <button onclick="myFunction()">Sort</button></br>
+        <textarea id="ta2" cols="45" rows="10"></textarea>
+    </div>
+
+    <script type="text/javascript">
+        var data = [];
+        
+        function myFunction() {
+			var inputValue = document.getElementById('ta1').value;
+            var dt = document.getElementById('ta1').value;
+			data.push(dt);
+
+            var wordCount = inputValue.split(" ").length;
+            console.log(wordCount);
+
+            var vowelCount = inputValue.split("a,e,i,o,u")
+
+        }
+    
+    </script>
+</body>
+</html>
